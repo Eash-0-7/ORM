@@ -25,7 +25,7 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 Model.py
-'''
+```
 from django.db import models
 from django.contrib import admin
 class car(models.Model):
@@ -35,13 +35,13 @@ class car(models.Model):
     age = models.IntegerField()
 class carAdmin(admin.ModelAdmin):
     list_display = ('regno','brand','price','age')
-'''
+```
 admin.py
-'''
+```
 from django.contrib import admin
 from.models import car,carAdmin
 admin.site.register(car,carAdmin)
-'''
+```
 
 
 ## OUTPUT
